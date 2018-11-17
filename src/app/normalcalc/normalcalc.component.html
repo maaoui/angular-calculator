@@ -1,0 +1,33 @@
+<div class="container">
+  <h1>My Real calculatrice</h1>
+<div class="champ">
+  <input type="text" name=""  value="{{ myoperation }}" disabled=true>
+  <h3> </h3> 
+</div>
+
+<div class="numbers">
+  <button (click)="update('0')" class="button-one">0</button>
+  <button (click)="update('1')" class="button-one">1</button>
+  <button (click)="update('2')" class="button-one">2</button>
+  <button (click)="update('3')" class="button-one">3</button>
+  <button (click)="update('4')" class="button-one">4</button>
+  <button (click)="update('5')" class="button-one">5</button>
+  <button (click)="update('6')" class="button-one">6</button>
+  <button (click)="update('7')" class="button-one">7</button>
+  <button (click)="update('8')" class="button-one">8</button>
+  <button (click)="update('9')" class="button-one">9</button>
+</div>
+
+<div class="operators">
+    <button (click)="update('+')" class="button-one">+</button>
+    <button (click)="update('-')" class="button-one">-</button>
+    <button (click)="update('*')" class="button-one">*</button>
+    <button (click)="update('/')" class="button-one">/</button>
+<div class="egal">
+    <button (click)="calcul()" class="button-one">=</button>
+    <button (click)="del()" class="button-one">C</button>
+</div>
+    
+</div>
+
+</div>

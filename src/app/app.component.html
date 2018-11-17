@@ -1,0 +1,38 @@
+<div class="main">
+
+
+
+<div *ngIf="normal">
+    <app-normalcalc></app-normalcalc>
+</div>
+<div *ngIf="scientifique">
+<app-scicalc></app-scicalc>
+</div>
+<app-radio-btn></app-radio-btn>
+
+
+
+
+<div class="container">
+	
+    <h2>I want a:</h2>
+    
+    <ul>
+    <li>
+      <input type="radio" id="f-option" name="selector" (click)="change()" checked>
+      <label for="f-option">Normal calculatrice</label>
+      
+      <div class="check"></div>
+    </li>
+    
+    <li>
+      <input type="radio" id="s-option" name="selector" (click)="change()">
+      <label for="s-option">Scientifique calculatrice</label>
+      
+      <div class="check"><div class="inside"></div></div>
+    </li>
+    
+  </ul>
+  </div>
+  
+</div>
